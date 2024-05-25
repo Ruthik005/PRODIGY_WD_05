@@ -1,0 +1,114 @@
+body {
+  background: linear-gradient(135deg, #e7c436, #74bddf);
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden; /* Disable scrolling */
+}
+
+#weather-app-container {
+  background: rgba(255, 255, 255, 0.85);
+  width: 90%;
+  max-width: 500px;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  color: #333;
+  overflow: auto;
+}
+
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+
+input {
+  width: calc(70% - 20px);
+  padding: 10px;
+  border-radius: 25px;
+  border: 2px solid #e61f99;
+  outline: none;
+  margin-bottom: 20px;
+  font-size: 1em;
+  text-align: center;
+  color: #442eea;
+}
+
+input::placeholder {
+  color: #95a5a6;
+}
+
+button {
+  background-color: #d7167a;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #388e3c;
+}
+
+#weather-display {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+#temperature {
+  font-size: 2em;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+#weather-details {
+  font-size: 1.2em;
+  margin-top: 10px;
+}
+
+#weather-icon-image {
+  width: 150px;
+  height: 150px;
+  display: none;
+  margin-top: 20px;
+}
+
+#hourly-forecast-container {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  justify-content: flex-start;
+}
+
+.hourly-forecast-item {
+  flex: 0 0 auto;
+  width: 100px;
+  background: rgba(76, 175, 80, 0.1);
+  padding: 10px;
+  border-radius: 15px;
+  margin-right: 10px;
+  color: #2c3e50;
+  text-align: center;
+  transition: background 0.3s ease;
+}
+
+.hourly-forecast-item:hover {
+  background: rgba(76, 175, 80, 0.2);
+}
+
+.hourly-forecast-item img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
+}
