@@ -28,7 +28,7 @@ To get a local copy up and running, follow these simple steps:
 
 1. Clone the repo:
     ```sh
-    git clone https:[//github.com/yourusername/weather-app.git](https://github.com/Ruthik005/PRODIGY_WD_05.git)
+    git clone https:(https://github.com/Ruthik005/PRODIGY_WD_05.git)
     ```
 2. Navigate to the project directory:
     ```sh
